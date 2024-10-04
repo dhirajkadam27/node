@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 async function dbConnect(){
-    await mongoose.connect(process.env.DATABASE_URL, {
+    await mongoose.connect('mongodb+srv://root:2710@toggledb.6bbmr.mongodb.net/', {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
